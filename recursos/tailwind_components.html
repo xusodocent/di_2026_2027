@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exemple de Tailwind CSS - Pàgina Completa</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-100">
+  <p class="relative z-50 bg-white p-4 text-gray-900">Maqueta visual: les fletxes del carrusel i l’enviament del formulari no tenen funcionalitat implementada.</p>
 
   <!-- Barra de Navegació -->
   <nav class="bg-blue-500 p-4 fixed w-full top-0 left-0 shadow-lg">
@@ -59,13 +60,13 @@
   <section class="py-16 bg-gray-200">
     <h2 class="text-3xl font-bold text-center mb-8">Galeria d'imatges</h2>
     <div class="relative">
-      <div class="w-full h-64 bg-gray-300 rounded-lg overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('https://via.placeholder.com/800x400');"></div>
-        <div class="absolute bottom-0 left-0 w-full text-center text-white bg-black bg-opacity-50 py-2">Imatge 1</div>
+      <div class="relative w-full h-64 bg-gray-300 rounded-lg overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('../img/logocap.png');"></div>
+        <div class="absolute bottom-0 left-0 w-full text-center text-white bg-black/50 py-2">Imatge 1</div>
       </div>
       <div class="w-full flex justify-center mt-4 space-x-2">
-        <button class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-300">⟨</button>
-        <button class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-300">⟩</button>
+        <button type="button" aria-label="Imatge anterior" class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-300">⟨</button>
+        <button type="button" aria-label="Imatge següent" class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-300">⟩</button>
       </div>
     </div>
   </section>
@@ -94,7 +95,7 @@
 
   <!-- Footer -->
   <footer class="bg-blue-500 text-white py-4 text-center">
-    <p>&copy; 2023 La teva empresa. Tots els drets reservats.</p>
+    <p>&copy; 2026 La teva empresa. Tots els drets reservats.</p>
   </footer>
 
 </body>
